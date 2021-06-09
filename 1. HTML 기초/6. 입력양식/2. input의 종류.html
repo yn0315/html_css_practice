@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/register" method="POST">
+        # 아이디: <input type="text"> <br>
+        # 비밀번호: <input type="password"> <br>
+        # 이메일: <input type="email" value="abc1234@naver.com"> <br>
+        <!-- value속성 회원정보 변경같은 거 할 때 미리 입력되어있는 것 -->
+        # 취미:
+        <input type="checkbox"> 음악감상
+        <input type="checkbox"> 게임
+        <input type="checkbox"> 영화보기 <br>
+
+        # 이메일 수신 여부:
+        <input type="radio" name="email-verify" checked>예
+        <input type="radio" name="email-verify" disabled>아니오 <br>
+        <!-- checked 미리 선택되어있게 -->
+        <!-- disabled 아예 못 누르게 막아놓음 -->
+        # sms 수신 여부:
+        <input type="radio" name="sms-verify" checked>예
+        <input type="radio" name="sms-verify">아니오 <br>
+
+        <input type="file">
+
+        <br>
+
+        <input type="range" min="0" max="10" step="1" value="3">
+        <br>
+
+        <input type="number" value="1">
+
+        <input type="hidden" value="메롱">
+
+        <br>
+        <button id="cm" type="button">그냥버튼</button>
+        <button type="submit">전송버튼</button>
+        <button type="reset">초기화버튼</button>
+
+        <!-- range 볼륨조절바같은 거/ value 기본값  -->
+        <!-- radio 버튼 그룹화 기능 있음 name 만들어서 해야 됨-->
+        <!-- 메롱을 전달할 때 숨기려면 hidden 써야함 -->
+    </form>
+
+    <script>
+        cm.onclick = e => {
+            alert('하이');
+        }
+    </script>
+
+</body>
+
+</html>
