@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fruits>li:nth-child(5) {
+            color: rgb(168, 168, 58);
+        }
+
+        /* 짝수 후손적용 */
+        .fruits>li:nth-child(even) {
+            color: blue;
+        }
+
+        /* 홀수 후손적용 */
+        .fruits>li:nth-child(odd) {
+            color: brown;
+        }
+
+        .fruits>li:nth-child(3n+1) {
+            font-style: italic;
+            ;
+        }
+
+        .food>p:nth-child(2) {
+            font-size: 1.3em;
+            color: tomato;
+        }
+
+        /* 바로 위랑 같은 거, 가독성을 위해 */
+        .food>p:nth-of-type(1) {
+            font-size: 1.3em;
+            color: tomato;
+        }
+
+        .fruits li:not(.orange) {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.fruits>li*4 -->
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>복숭아</li>
+        <li>파인애플</li>
+    </ul>
+
+    <div class="food">
+        <div>짜장면</div>
+        <p>볶음밥</p>
+        <p>닭강정</p>
+        <span>짬뽕</span>
+    </div>
+
+</body>
+
+</html>

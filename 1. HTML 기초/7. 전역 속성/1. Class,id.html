@@ -28,8 +28,8 @@
         }
 
         /* .red 클래스 red */
-        /* class 묶어주는..전역속성 */
-        /* id 는  */
+        /* class 묶어주는..전역속성 css 관련속성, 중복가능 */
+        /* id 는 스크립트 관련, 특정 태그를 지목해 기능을 부여하고 싶을 때, 중복안됨 */
     </style>
 </head>
 
@@ -51,13 +51,13 @@
     <script>
         document.querySelector('#one').onclick = e => {
             alert('1번 버튼 클릭됨!');
-        }
+        };
         document.querySelector('#two').onclick = e => {
             alert('2번 버튼 클릭됨!');
-        }
+        };
         document.querySelector('#three').onclick = e => {
             alert('3번 버튼 클릭됨!');
-        }
+        };
     </script>
 </body>
 

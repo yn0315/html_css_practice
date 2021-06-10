@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- 후손선택자는 조상 다음에 띄어쓰기 꼭 해야됨, 일치선택자는 띄어쓰기X -->
+
+    <style>
+div .orange {
+    color: red;
+
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>안녕안녕</h1>
+
+    <!-- emmet 문법 -->
+    <!-- div>ul>li*3 후손-->
+    <div>
+        <h1>메롱메롱</h1>
+        <ul>
+            <li id="apple">사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+
+        <!-- div+p+span 같은 촌수-->
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+
+</body>
+
+</html>

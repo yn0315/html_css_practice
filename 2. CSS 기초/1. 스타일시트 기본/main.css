@@ -1,0 +1,6 @@
+
+@import url(./side.css);
+/* side css 불러와서 같이 적용함 */
+
+h1, p { color: red;
+background: orange;}
