@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul li::before {
+            content: '번호';
+            color: red;
+            margin-right: 10px;
+        }
+
+        ul li::after {
+            /* before, after요소는 content속성이 필수 */
+            /* 도형을 넣을 때도 content 써야함, 비워둬야됨, display 속성도 필요! */
+            content: '';
+            display: inline-block;
+            /* 블록 수평으로 정렬하려면 inline으로 배치, 다른 방법도 있음 */
+            width: 10px;
+            height: 10px;
+            /* 원을 만드는 법 */
+            border-radius: 50%;
+            background: tomato;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ul>li{$}*10 $ 연속된 숫자포함 -->
+   <ul>
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+       <li>9</li>
+       <li>10</li>
+   </ul>
+    
+</body>
+</html>

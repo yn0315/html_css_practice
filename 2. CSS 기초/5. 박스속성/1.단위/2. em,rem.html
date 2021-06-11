@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div {
+            border: 2px solid black;
+        }
+
+
+        body {
+            font-size: 20px;
+        }
+
+        html {
+            /* font-size: 16px; 기본값*/
+            font-size: 10px;
+        }
+        /* em은 자기 폰트사이즈대비, body 폰트사이즈 상속 */
+        .root {
+            font-size: 1.5em;
+            /* rem은 html의 기본값이 기준!! */
+            width: 60rem;
+        }
+        /* %는 부모대비 */
+        .parent {
+            width: 50%;
+        }
+        .child {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<!-- 블록요소를 박스라고 함... -->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+    
+</body>
+</html>
