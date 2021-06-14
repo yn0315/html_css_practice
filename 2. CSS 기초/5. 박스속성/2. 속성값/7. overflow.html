@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .parent {
+        width: 300px;
+        height: 250px;
+        border: 4px solid;
+        overflow: auto;
+        
+    }
+
+    .child {
+        width: 100px;
+        height: 50px;
+        background: red;
+        border: 4px solid orange;
+        font-size: 40px;
+
+    }
+
+    .child:nth-child(2) {
+        /* 소수점 쓸 때 앞에 0 생략 가능 .7로 써도 0.7 */
+        opacity: 0.7;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+    
+</body>
+</html>
