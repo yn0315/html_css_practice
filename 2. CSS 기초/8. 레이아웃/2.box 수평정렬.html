@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background: orange;
+            color: white;
+            font-size: 50px;
+            margin: 10px;
+
+            /* x축 중앙정렬 */
+            text-align: center;
+            /* line-height값을 height와 맞추면 y축 중앙정렬 */
+            line-height: 100px;
+            float: left;
+        }
+
+        /* 4,7,10... 수평배치 그만 both는 플롯 방향 아무거나 해도 다 해지 */
+        .box:nth-child(3n+1) {
+            clear: both;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+
+
+
+</body>
+
+</html>

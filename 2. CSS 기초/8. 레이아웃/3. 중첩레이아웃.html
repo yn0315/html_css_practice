@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid red;
+            /* overflow: hidden; 되긴 하는데 쓰면 안됨*/
+        }
+
+        /* 중첩레이아웃 플롯 버그 해제 */
+        /* 해제를 위한  css먼저 설계하고 클래스 지정해줌 */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .c2 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+        }
+
+        .c3 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid tomato;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 10px;
+            float: left;
+        }
+
+        /* .clearbox {
+        clear:both;
+    } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <!-- 1. <div class="clearbox"></div> -->
+    </div>
+    <div class="c2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+    <div class="c3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>

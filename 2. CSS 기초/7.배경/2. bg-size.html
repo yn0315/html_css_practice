@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 100px;
+            /* 500 500 */
+            background-image: url('img/basic.jpg');
+            background-repeat: no-repeat;
+            /* 가로 세로 사이즈 지정가능 */
+            /* background-size: 200px 100px; */
+
+            /* 하나만 적으면 가로로 취급하고 세로사이즈는 비율에 맞게 자동 조정 */
+            /* background-size: 300px; */
+
+            /* background-size: cover; */
+
+            /* y축 음수로 쓰면 위로 올라감 */
+            /* background-position: 0 -50px; */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* background를 넣고 만든다음에 없애기 */
+
+        .navi {
+            /* li 태그 앞에 점 제거 */
+
+            width: 70%;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+
+        }
+
+
+        .navi li {
+            float: left;
+            margin: 0 1%;
+            width: 18%;
+            text-align: center;
+            /* 밑줄 좀 더 밑에다가 */
+            padding-bottom: 10px;
+        }
+
+        .navi li:hover {
+            border-bottom: 2px solid red;
+
+        }
+
+        /* a태그는 인라인요소라서 float 주면 X */
+
+        .navi li a {
+            /* a 태그 밑줄제거 */
+            text-decoration: none;
+            /* 글자색 상속받기 */
+            color: inherit;
+            font-size: 20px;
+
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <ul class="navi clearfix">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">LOGIN</a></li>
+    </ul>
+
+
+
+</body>
+
+</html>

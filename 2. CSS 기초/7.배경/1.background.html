@@ -11,16 +11,19 @@
             width: 550px;
             height: 350px;
             border: 2px dashed gray;
-            background-color: orange;
+            /* background-color: orange;
             background-image: url('img/sky.jpg');
             background-size: 200px;
             background-repeat: no-repeat;
             /* 앞이 x축 뒤가 y축 */
             /* background-position: right top; */
-            background-position: center;
+            /* background-position: center; */
             /* 칸에 꽉차게 */
-            background-size: cover;
+            /* background-size: cover; */
             /* contain는 짧은 선에 맞춰서 틈이 생김 */
+            
+            /* 앞이 포지션, 뒤에는 사이즈! / 꼭 써야함 */
+            background: orange url('img/sky.jpg') no-repeat fixed center / cover;
         }
     </style>
 </head>
