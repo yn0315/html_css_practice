@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 4px dashed orange;
+    font-size: 30px;
+}
+
+.box:nth-child(2) {
+    position: relative;
+    
+    /* top 기준이 1번 박스 bottom
+    1,3번 박스가 2번 자리침범 X */
+    top: -50px;
+}
+    </style>
+</head>
+<body>
+    
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+
+</body>
+</html>
