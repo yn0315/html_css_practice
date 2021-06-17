@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 50px;
+
+            /* transition-property: all; 이건 기본값이라 안 써도 무방*/
+
+            /* transition-duration: 2s; */
+            /* transition: width 2s, background 0.7s; */
+
+            /* 전부 동일적용시 all 생략 */
+            /* transition: 1s; */
+            /* transition-duration: 2s;
+            transition-delay: 1s; */
+
+            /* 앞이 duration 뒤에 delay */
+            /* transition:  2s 1s; */
+            transition: 2s;
+
+            /* linear는 균일한 속도, 기본값은 ease 갈수록 느리게*/
+            transition-timing-function: steps(4);
+            /* transition도 한줄로 사용가능 */
+
+        }
+
+        .box:hover {
+            width: 300px;
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+    </div>
+
+</body>
+
+</html>

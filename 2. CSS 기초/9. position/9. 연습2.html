@@ -10,7 +10,10 @@
     <style>
         .container {
             display: flex;
-            margin: 50px 0 auto;
+            /* 가로길이 컨텐츠만큼만 되게 한 후 중앙정렬해야됨 */
+            width: fit-content;
+            margin: 50px auto;
+    
         }
 
         .container .box {
@@ -20,15 +23,22 @@
             border: 4px dashed red;
             border-radius: 10px;
             font-size: 30px;
+            text-align: center;
+            /* 그림자 효과 : box, text- shadow
+            box-shadow: 가로그림자길이, 세로그림자길이, 블러효과크기, 색상 */
+            box-shadow: 10px 10px 10px red;
+            line-height: 100px;
             margin-right: -30px;       
-            position: relative;
-
+            transition: 0.7s;
+     
         }
 
         .container .box:hover {
             background: yellowgreen;
             border-color: yellow;
-            margin-top: -20px;
+            /* position: relative;
+            bottom: 20px; */
+            transform: translateY(-20px);
             z-index: 100;
           
         }
