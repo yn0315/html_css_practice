@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.wrap {
+    margin: 100px;
+    width: 600px;
+    display: grid;
+    border: 4px solid gray;
+    grid-template-rows: repeat(3,100px );
+    grid-template-columns: repeat(3,1fr );
+
+    grid-template-areas: 
+    "top top top"
+    "main main side"
+    /* 비워두고 싶으면 . */
+    ". bottom bottom";
+
+/* 그리드는 마진말고 gap으로 사이 띄움 */
+    /* row-gap: 20px; */
+    /* column-gap: 15px; */
+
+    gap: 20px 15px;
+}
+.wrap > * {
+    border: 5px solid red;
+}
+.wrap header {
+    grid-area: top;
+}
+.wrap section {
+    grid-area: main;
+}
+.wrap aside {
+    grid-area: side;
+}
+.wrap footer {
+    grid-area: bottom;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header>Header</header>
+        <section class="main">Main</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+
+    </div>
+
+</body>
+
+</html>
